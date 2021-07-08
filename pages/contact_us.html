@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Adding meta tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link href="../assets/Site.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/jpeg" href="../assets/icons//cu.jpg">
+
+        <script type="text/javascript" src="../assets/jquery-3.4.1.min.js"></script>
+
+    </head>
+    <body style="font-family: Times New Roman">
+        <!-- navigation of current page on left side-->
+        <nav>
+            <span class="left">
+                <a class="nav-item" href="../index.html">Prajwal😎</a>
+            </span>
+
+            <!--main nav on right with slide bar -->
+            <span class="right">
+                <a class="nav-item" href="#" id="sidea">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92.833px" height="92.833px" viewBox="0 0 92.833 92.833" style="enable-background:new 0 0 92.833 92.833;height: 23px;fill: #f3f8f9;top: 6px;position: relative;" xml:space="preserve"><g><g><path d="M89.834,1.75H3c-1.654,0-3,1.346-3,3v13.334c0,1.654,1.346,3,3,3h86.833c1.653,0,3-1.346,3-3V4.75         C92.834,3.096,91.488,1.75,89.834,1.75z"></path><path d="M89.834,36.75H3c-1.654,0-3,1.346-3,3v13.334c0,1.654,1.346,3,3,3h86.833c1.653,0,3-1.346,3-3V39.75            C92.834,38.096,91.488,36.75,89.834,36.75z"></path><path d="M89.834,71.75H3c-1.654,0-3,1.346-3,3v13.334c0,1.654,1.346,3,3,3h86.833c1.653,0,3-1.346,3-3V74.75         C92.834,73.095,91.488,71.75,89.834,71.75z"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
+
+                <a class="nav-item" href="#" id="sidex" style="display: none">
+                    <svg viewBox="0 0 365.71733 365" xmlns="http://www.w3.org/2000/svg" style="height:23px;fill:#fff;position:relative;top:6px" width="92.833px"><g><path d="m356.339844 296.347656-286.613282-286.613281c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503906-12.5 32.769532 0 45.25l286.613281 286.613282c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082032c12.523438-12.480468 12.523438-32.75.019532-45.25zm0 0"></path><path d="m295.988281 9.734375-286.613281 286.613281c-12.5 12.5-12.5 32.769532 0 45.25l15.082031 15.082032c12.503907 12.5 32.769531 12.5 45.25 0l286.632813-286.59375c12.503906-12.5 12.503906-32.765626 0-45.246094l-15.082032-15.082032c-12.5-12.523437-32.765624-12.523437-45.269531-.023437zm0 0"></path></g></svg>
+                </a>
+            </span>
+        </nav>
+
+        <!-- listing the pages for navigation-->
+        <ul class="sidebar" id="side" style="display: none">
+            <li><a href="../index.html" class="nonactive">Home</a></li>
+            <li><a href="CV.html" class="nonactive">CV</a></li>
+            <li><a href="blog.html" class="nonactive">Blog</a></li>
+            <li><a href="contact_us.html" class="active">Contact Us</a></li>
+            <li><a href="Research.html" class="nonactive">Research</a></li>
+        </ul>
+        <div class="page_main_head">
+            <h2 style="font-family: Arial Black">Contact Us</h2>
+        </div>
+        
+        
+        
+       
+
+        <div class="container body-content" style="margin-bottom: 50px;">
+            <div class="container">
+
+            <form name="messageForm" onsubmit="validateForm()" style="align-self: auto; ">
+		<p style="margin-top: 50px;">First Name:- <input type="text" name="firstname" placeholder="Prajwal" style="flex: right;"></p>
+		<p>Last Name:- <input type="text" name="lastname" placeholder="Bhandari"></p>
+		<p>Gender:- <input type="radio" name="gender" value="male" checked>Male
+		<input type="radio" name="gender" value="female">Female</p>
+		<p style="margin-top: 100px;">Message: <br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+		<p><input type="submit" value="Send"></p>
+	</form>
+	<script style="float: right;">
+		function validateForm() {
+			var fname = document.forms["messageForm"]["firstname"].value;
+			var lname = document.forms["messageForm"]["lastname"].value;
+			var gender = document.forms["messageForm"]["gender"].value;
+			var message = document.forms["messageForm"]["message"].value;
+			
+			if (fname == "" || lname == "" || message == "") {
+				alert("Empty fields found. Please fill the form.")
+			}
+			else {
+				alert("Thank you for the feedback.");
+			}
+		}
+	</script>             
+        </div>  
+        </div>  
+
+
+<!--Adding spcial media profile links--> 
+                <div class="socials" >
+                	<a class="social" href="https://www.facebook.com/prajwal.bhandari.16" target="_blank">Facebook</a>
+                	<a class="social" href="https://twitter.com/Prajwal84134424" target="_blank">Twitter</a>
+                	<a class="social" href="https://instagram.com/theprajwal007" target="_blank">Instagram</a>
+                </div>
+
+<!--Setting up a footer-->
+<footer id="footer">
+        <p>Copyright © 2020 - <a href="https://www.facebook.com/prajwal.bhandari.16" target="_blank">Prajwal Bhandari</a>.</p>
+       
+                <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()" style="color:  #0d487b;">
+Check Date & Time</button>
+
+<p id="demo"></p>
+    </footer>
+
+     
+            
+
+    	<!-- Chat widget setup-->
+       
+        <script src="https://chat.anishkhatri.com/chat_widget.js?token=822404376"></script>
+        <script type="text/javascript">
+                        $('#sidea').on('click', function () {
+                        $('#side').addClass('slide');
+                        $('#sidea').css({display: 'none'});
+                        $('#sidex').css({display: 'inline'});
+                        });
+
+                        $('#sidex').on('click', function () {
+                        $('#side').removeClass('slide');
+                        $('#sidex').css({display: 'none'});
+                        $('#sidea').css({display: 'inline'});
+                        });
+        </script>
+    </body>
+    </html>
